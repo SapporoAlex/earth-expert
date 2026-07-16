@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#333333">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Earth Expert">
+  <title>Earth Expert</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+</head>
+<body>
+
+  <div class="section">
+    <div class="container">
+      <header>
+
+      </header>
+
+      <div id="home-screen" class="home-screen">
+        <h1 class="app-title">🌍 Earth Expert</h1>
+        <p class="app-subtitle">Pick a region and learn its map by heart.</p>
+        <div id="region-grid" class="region-grid"></div>
+      </div>
+
+      <div id="game-screen" class="game-screen is-hidden">
+        <section class="map-section">
+          <div id="map-container"></div>
+        </section>
+        <div class="menu-container">
+          <div class="menu">
+            <button id="home-button" class="home-button">🏠 Regions</button>
+            <div class="text-section">
+              <p id="question-text"></p>
+              <p id="answer-text"></p>
+              <p id="retry">🔁 Try Again</p>
+            </div>
+            <div id="score-section">
+
+              <div class="score-box">
+                <div>SCORE</div>
+                <div id="box-inner">
+                  <span id="score">0</span>
+                </div>
+              </div>
+
+              <div class="best-box">
+                <div>BEST</div>
+                  <div class="box-inner">
+                    <span id="best-score">0</span>/<span id="total-count">0</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="credit">by Alex McKinley 2025 &middot; USA map &copy; <a href="https://www.amcharts.com" style="color:inherit;">amCharts</a> (CC BY-NC 4.0) &middot; Country maps based on Wikimedia Commons blank world map (public domain) &middot; Australia map by Lokal_Profil (CC BY-SA 3.0)</p>
+  <script src="regions.js"></script>
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.mobile.js"></script>
+</body>
+</html>
