@@ -180,7 +180,7 @@ body::after {
 .home-screen {
   position: relative;
   z-index: 1;
-  height: 100dvh;
+  height: auto;
   width: 100dvw;
   display: flex;
   flex-direction: column;
@@ -268,16 +268,13 @@ body::after {
 }
 
 .home-button {
-  position: absolute;
-  bottom: -2rem;
-  left: 2rem;
   background: rgba(255, 255, 255, 0.08);
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   color: #fff;
   font-family: "Segoe UI", sans-serif;
   font-weight: bold;
-  padding: 0.5rem 0.9rem;
+  padding: 0.5rem 0.5rem;
   cursor: pointer;
   z-index: 1001;
 }
