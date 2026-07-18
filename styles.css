@@ -7,7 +7,8 @@ body {
   margin: 0;
   height: 100vh;
   background: linear-gradient(to bottom, #2f88d1, #54acff);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   position: relative;
   font-family: sans-serif;
 }
@@ -173,7 +174,7 @@ body::after {
 }
 
 .map-section {
-  height: 100dvh;
+  height: auto;
   width: 100dvw;
 }
 
@@ -200,17 +201,6 @@ body::after {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.app-subtitle {
-  margin: 0 0 1rem;
-  opacity: 0.85;
-  font-size: 1.1rem;
-  background: none;
-  border-left: none;
-  box-shadow: none;
-  padding: 0;
-  color: #fff;
-}
-
 .region-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(160px, 1fr));
@@ -227,7 +217,7 @@ body::after {
   background: rgba(255, 255, 255, 0.08);
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
-  padding: 1.25rem 0.75rem;
+  padding: 5px;
   color: #fff;
   font-family: inherit;
   cursor: pointer;
