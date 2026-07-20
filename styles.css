@@ -174,7 +174,7 @@ body::after {
 }
 
 .map-section {
-  height: auto;
+  height: 100dvh;
   width: 100dvw;
 }
 
@@ -182,6 +182,7 @@ body::after {
   position: relative;
   z-index: 1;
   height: auto;
+  min-height: 100dvh;
   width: 100dvw;
   display: flex;
   flex-direction: column;
